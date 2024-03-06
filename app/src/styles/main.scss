@@ -3,13 +3,13 @@
 @import "abstracts/variables";
 
 @import "normalize.css";
-@import "base/base";
 @import "base/typography";
+@import "base/base";
 @import "base/utility";
 @import "base/animation";
 
 @import "components/button";
-
+@import "components/header";
 
 @import "layout/main";
 @import "layout/grid";
