@@ -5,7 +5,6 @@ import TabButton from './TabButton'
 
 import { EXAMPLES } from '../data'
 
-
 const Examples = () => {
 
     const [ selectedState, setSelectedState] = useState('components')
