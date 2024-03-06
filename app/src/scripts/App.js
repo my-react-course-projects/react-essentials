@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import { CORE_CONCEPTS } from './data'
 
-import Header from './components/Header/Header'
+import Header from './components/Header'
 import CoreConcept from './components/CoreConcept'
 import TabButton from './components/TabButton'
 import { EXAMPLES } from './data'
-
-import componentsImage  from '../images/components.png'
 
 const App = () => {
 

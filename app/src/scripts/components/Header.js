@@ -1,6 +1,6 @@
 import React from 'react'
 
-import reactCoreImage  from '../../../images/react-core-concepts.png'
+import reactCoreImage  from '../../images/react-core-concepts.png'
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core']
 
