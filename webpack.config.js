@@ -70,9 +70,9 @@ const config = {
         //     ]
         // }),
         new HtmlWebpackPlugin({
-            title: 'Update this accordingly...',
+            title: 'React Essentials',
             template: `./${sourceDir}/index.hbs`,
-            description: 'Some Description of your choice'
+            description: 'Showcases the fundamental concepts in React'
         })
     ],
     optimization: {
