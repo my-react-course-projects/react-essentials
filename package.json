@@ -22,7 +22,7 @@
   "config": {
     "entry": "app",
     "sourceDir": "app/src",
-    "buildDir": "app/dist",
+    "buildDir": "app/docs",
     "port": "3001"
   },
   "devDependencies": {
