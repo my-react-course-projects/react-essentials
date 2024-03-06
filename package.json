@@ -21,7 +21,7 @@
   "license": "MIT",
   "config": {
     "sourceDir": "src",
-    "buildDir": "dist",
+    "buildDir": "docs",
     "port": "3001"
   },
   "devDependencies": {
