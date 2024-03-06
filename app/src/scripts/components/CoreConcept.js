@@ -1,15 +1,13 @@
 import React from 'react'
 import { CORE_CONCEPTS } from '../data'
+import Section from './SectionWrapper'
 import CoreConcepts from './CoreConcepts'
 
 const CoreConcept = () => {
     return (
-        <section id='core-concepts'>
-            <h2>Core Concepts</h2>
-                <ul>
-                   {CORE_CONCEPTS.map(item => <CoreConcepts key={item.title} {...item} /> )}
-                </ul>
-        </section>
+        <Section id='core-concepts' title='Core Concepts'>
+            <ul>{CORE_CONCEPTS.map(item => <CoreConcepts key={item.title} {...item} /> )}</ul>
+        </Section>
     )
 }
 
