@@ -10,7 +10,7 @@ import componentsImage  from '../images/components.png'
 
 const App = () => {
 
-    const [ selectedState, setSelectedState] = useState()
+    const [ selectedState, setSelectedState] = useState('components')
 
     const handleSelect = (selectedButton) => {
         setSelectedState(selectedButton)
@@ -21,7 +21,7 @@ const App = () => {
     if(selectedState) {
        tabContent = (
             <div id='tab-content'>
-                
+
             <h3>{EXAMPLES[selectedState].title}</h3>
             <p>{EXAMPLES[selectedState].description}</p>
             <pre>
