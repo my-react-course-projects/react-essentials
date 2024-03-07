@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 
-import Section from "./SectionWrapper"
+import Section from './SectionWrapper'
 import TabButton from './TabButton'
+import Tabs from './Tabs'
 
 import { EXAMPLES } from '../data'
 
@@ -32,13 +33,18 @@ const Examples = () => {
 
     return (
         <Section id='examples' title='Examples'>
-        <menu>
+        <Tabs
+         buttons={ 
+            <>
             <TabButton isSelected={selectedState == 'components'} onClick={() => handleSelect('components')}>Components</TabButton>
             <TabButton isSelected={selectedState == 'jsx'} onClick={() => handleSelect('jsx')}>JSX</TabButton>
             <TabButton isSelected={selectedState == 'props'} onClick={() => handleSelect('props')}>Props</TabButton>
             <TabButton isSelected={selectedState == 'state'} onClick={() => handleSelect('state')}>State</TabButton>
+           </> }
+        >{tabContent}</Tabs>
+        <menu>
+           
         </menu>
-       {tabContent}
     </Section>
     )
 }
