@@ -34,6 +34,8 @@ const Examples = () => {
     return (
         <Section id='examples' title='Examples'>
         <Tabs
+         ButtonsContainer='menu' // other options can be ul or div
+        //  ButtonsContainer={Section}  can also be passed a Custom component
          buttons={ 
             <>
             <TabButton isSelected={selectedState == 'components'} onClick={() => handleSelect('components')}>Components</TabButton>
