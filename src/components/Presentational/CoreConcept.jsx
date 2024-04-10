@@ -1,5 +1,5 @@
 import React from 'react'
-import { CORE_CONCEPTS } from '../data'
+import { CORE_CONCEPTS } from '../scripts/data'
 import Section from './SectionWrapper'
 import CoreConcepts from './CoreConcepts'
 

@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 
 import Section from './SectionWrapper'
-import TabButton from './TabButton'
-import Tabs from './Tabs'
+import TabButton from '../Presentation/common/TabButton'
+import Tabs from '../Presentation/common/Tabs'
 
-import { EXAMPLES } from '../data'
+import { EXAMPLES } from '../scripts/data'
 
 const Examples = () => {
 
