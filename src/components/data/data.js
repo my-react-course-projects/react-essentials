@@ -1,7 +1,7 @@
-import componentsImg from '../images/components.png';
-import propsImg from '../images/config.png';
-import jsxImg from '../images/jsx-ui.png';
-import stateImg from '../images/state-mgmt.png';
+import componentsImg from '../../assets/images/components.png'
+import propsImg from '../../assets/images/config.png'
+import jsxImg from '../../assets/images/jsx-ui.png'
+import stateImg from '../../assets/images/state-mgmt.png'
 
 export const CORE_CONCEPTS = [
   {

@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
+import HeaderWrapper from './Presentation/Wrappers/HeaderWrapper.jsx'
+import MainWrapper from './Presentation/Wrappers/MainWrapper.jsx'
 
-import Header from './components/Header'
-import Main from './components/MainWrapper'
-import CoreConcept from './components/CoreConcept'
-import Examples from './components/Examples'
+import Header from './Presentation/Layout/Header.jsx'
+
+import Examples from './Containers/Examples.jsx'
+import CoreConcept from './Presentation/CoreConcept/CoreConcept.jsx'
 
 const App = () => {
 
     return (
-        <>
-            <Header />
-            <Main className='main'>
+        <>  
+            <HeaderWrapper>
+               <Header />
+            </HeaderWrapper>
+            <MainWrapper className='main'>
                 <CoreConcept />
                 <Examples />
-            </Main>
+            </MainWrapper>
         </>
     )
 }

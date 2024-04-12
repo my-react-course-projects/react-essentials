@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import { useState } from 'react'
 
-import Section from './SectionWrapper'
-import TabButton from '../Presentation/common/TabButton'
-import Tabs from '../Presentation/common/Tabs'
+import SectionWrapper from '../Presentation/Wrappers/SectionWrapper.jsx'
+import TabButtonWrapper from '../Presentation/Wrappers/TabButtonWrapper.jsx'
+import ExamplesWrapper from '../Presentation/Wrappers/ExamplesWrapper.jsx'
 
-import { EXAMPLES } from '../scripts/data'
+import { EXAMPLES } from '../data/data.js'
 
 const Examples = () => {
 
@@ -32,22 +32,20 @@ const Examples = () => {
     }
 
     return (
-        <Section id='examples' title='Examples'>
-        <Tabs
-        //  ButtonsContainer='menu' // other options can be ul or div
-        //  ButtonsContainer={Section}  can also be passed a Custom component
-         buttons={ 
-            <>
-            <TabButton isSelected={selectedState == 'components'} onClick={() => handleSelect('components')}>Components</TabButton>
-            <TabButton isSelected={selectedState == 'jsx'} onClick={() => handleSelect('jsx')}>JSX</TabButton>
-            <TabButton isSelected={selectedState == 'props'} onClick={() => handleSelect('props')}>Props</TabButton>
-            <TabButton isSelected={selectedState == 'state'} onClick={() => handleSelect('state')}>State</TabButton>
-           </> }
-        >{tabContent}</Tabs>
-        <menu>
-           
-        </menu>
-    </Section>
+        <SectionWrapper id='examples' title='Examples'>
+        <ExamplesWrapper
+            //  ButtonsContainer='menu' // other options can be ul or div
+            //  ButtonsContainer={Section}  can also be passed a Custom component
+            buttons={ 
+                <>
+                <TabButtonWrapper isSelected={selectedState == 'components'} onClick={() => handleSelect('components')}>Components</TabButtonWrapper>
+                <TabButtonWrapper isSelected={selectedState == 'jsx'} onClick={() => handleSelect('jsx')}>JSX</TabButtonWrapper>
+                <TabButtonWrapper isSelected={selectedState == 'props'} onClick={() => handleSelect('props')}>Props</TabButtonWrapper>
+                <TabButtonWrapper isSelected={selectedState == 'state'} onClick={() => handleSelect('state')}>State</TabButtonWrapper>
+            </> }
+            >{tabContent}
+        </ExamplesWrapper>
+    </SectionWrapper>
     )
 }
 
