@@ -381,6 +381,24 @@ if (true) {
 
 /***/ }),
 
+/***/ 251:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+var f=__webpack_require__(294),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}exports.Fragment=l;exports.jsx=q;exports.jsxs=q;
+
+
+/***/ }),
+
 /***/ 408:
 /***/ ((__unused_webpack_module, exports) => {
 
@@ -421,6 +439,18 @@ exports.useTransition=function(){return U.current.useTransition()};exports.versi
 
 if (true) {
   module.exports = __webpack_require__(408);
+} else {}
+
+
+/***/ }),
+
+/***/ 893:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+if (true) {
+  module.exports = __webpack_require__(251);
 } else {}
 
 
@@ -535,9 +565,49 @@ var __webpack_exports__ = {};
 var react = __webpack_require__(294);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(745);
-;// CONCATENATED MODULE: ./src/images/react-core-concepts.png
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(893);
+;// CONCATENATED MODULE: ./src/components/Presentation/Wrappers/HeaderWrapper.jsx
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+var _excluded = ["children"];
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function HeaderWrapper(_ref) {
+  var children = _ref.children,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("header", _objectSpread(_objectSpread({}, props), {}, {
+    children: children
+  }));
+}
+;// CONCATENATED MODULE: ./src/components/Presentation/Wrappers/MainWrapper.jsx
+function MainWrapper_typeof(o) { "@babel/helpers - typeof"; return MainWrapper_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, MainWrapper_typeof(o); }
+var MainWrapper_excluded = ["children"];
+function MainWrapper_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function MainWrapper_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? MainWrapper_ownKeys(Object(t), !0).forEach(function (r) { MainWrapper_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : MainWrapper_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function MainWrapper_defineProperty(obj, key, value) { key = MainWrapper_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function MainWrapper_toPropertyKey(t) { var i = MainWrapper_toPrimitive(t, "string"); return "symbol" == MainWrapper_typeof(i) ? i : String(i); }
+function MainWrapper_toPrimitive(t, r) { if ("object" != MainWrapper_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != MainWrapper_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+function MainWrapper_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = MainWrapper_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function MainWrapper_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function MainWrapper(_ref) {
+  var children = _ref.children,
+    props = MainWrapper_objectWithoutProperties(_ref, MainWrapper_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("main", MainWrapper_objectSpread(MainWrapper_objectSpread({}, props), {}, {
+    children: children
+  }));
+}
+;// CONCATENATED MODULE: ./src/assets/images/react-core-concepts.png
 const react_core_concepts_namespaceObject = __webpack_require__.p + "cc5ac625cda1aac30973.png";
-;// CONCATENATED MODULE: ./src/scripts/components/Header.js
+;// CONCATENATED MODULE: ./src/components/Presentation/Layout/Header.jsx
+
+
 
 
 var reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
@@ -546,32 +616,107 @@ var genRandomInt = function genRandomInt(max) {
 };
 var Header = function Header() {
   var description = reactDescriptions[genRandomInt(2)];
-  return /*#__PURE__*/react.createElement("header", null, /*#__PURE__*/react.createElement("img", {
-    src: react_core_concepts_namespaceObject,
-    alt: "Stylized atom"
-  }), /*#__PURE__*/react.createElement("h1", null, "React Essentials"), /*#__PURE__*/react.createElement("p", null, description, " React concepts you will need for almost any app you are going to build!"));
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("img", {
+      src: react_core_concepts_namespaceObject,
+      alt: "Stylized atom"
+    }), /*#__PURE__*/(0,jsx_runtime.jsx)("h1", {
+      children: "React Essentials"
+    }), /*#__PURE__*/(0,jsx_runtime.jsxs)("p", {
+      children: [description, " React concepts you will need for almost any app you are going to build!"]
+    })]
+  });
 };
-/* harmony default export */ const components_Header = (Header);
-;// CONCATENATED MODULE: ./src/scripts/components/MainWrapper.js
-var _excluded = ["children"];
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+/* harmony default export */ const Layout_Header = (Header);
+;// CONCATENATED MODULE: ./src/components/Presentation/Wrappers/SectionWrapper.jsx
+function SectionWrapper_typeof(o) { "@babel/helpers - typeof"; return SectionWrapper_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, SectionWrapper_typeof(o); }
+var SectionWrapper_excluded = ["children", "title"];
+function SectionWrapper_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function SectionWrapper_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? SectionWrapper_ownKeys(Object(t), !0).forEach(function (r) { SectionWrapper_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : SectionWrapper_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function SectionWrapper_defineProperty(obj, key, value) { key = SectionWrapper_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function SectionWrapper_toPropertyKey(t) { var i = SectionWrapper_toPrimitive(t, "string"); return "symbol" == SectionWrapper_typeof(i) ? i : String(i); }
+function SectionWrapper_toPrimitive(t, r) { if ("object" != SectionWrapper_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != SectionWrapper_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
-var Main = function Main(_ref) {
+
+function SectionWrapper_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = SectionWrapper_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function SectionWrapper_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function SectionWrapper(_ref) {
   var children = _ref.children,
-    props = _objectWithoutProperties(_ref, _excluded);
-  return /*#__PURE__*/react.createElement("main", props, children);
-};
-/* harmony default export */ const MainWrapper = (Main);
-;// CONCATENATED MODULE: ./src/images/components.png
+    title = _ref.title,
+    props = SectionWrapper_objectWithoutProperties(_ref, SectionWrapper_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)("section", SectionWrapper_objectSpread(SectionWrapper_objectSpread({}, props), {}, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("h2", {
+      children: title
+    }), children]
+  }));
+}
+;// CONCATENATED MODULE: ./src/components/Presentation/Common/Button.jsx
+function Button_typeof(o) { "@babel/helpers - typeof"; return Button_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Button_typeof(o); }
+var Button_excluded = ["children"];
+function Button_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function Button_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? Button_ownKeys(Object(t), !0).forEach(function (r) { Button_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Button_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function Button_defineProperty(obj, key, value) { key = Button_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function Button_toPropertyKey(t) { var i = Button_toPrimitive(t, "string"); return "symbol" == Button_typeof(i) ? i : String(i); }
+function Button_toPrimitive(t, r) { if ("object" != Button_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != Button_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+function Button_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Button_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function Button_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function Button(_ref) {
+  var children = _ref.children,
+    props = Button_objectWithoutProperties(_ref, Button_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("button", Button_objectSpread(Button_objectSpread({}, props), {}, {
+    children: children
+  }));
+}
+;// CONCATENATED MODULE: ./src/components/Presentation/Wrappers/TabButtonWrapper.jsx
+function TabButtonWrapper_typeof(o) { "@babel/helpers - typeof"; return TabButtonWrapper_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, TabButtonWrapper_typeof(o); }
+var TabButtonWrapper_excluded = ["children", "isSelected"];
+function TabButtonWrapper_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function TabButtonWrapper_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? TabButtonWrapper_ownKeys(Object(t), !0).forEach(function (r) { TabButtonWrapper_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : TabButtonWrapper_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function TabButtonWrapper_defineProperty(obj, key, value) { key = TabButtonWrapper_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function TabButtonWrapper_toPropertyKey(t) { var i = TabButtonWrapper_toPrimitive(t, "string"); return "symbol" == TabButtonWrapper_typeof(i) ? i : String(i); }
+function TabButtonWrapper_toPrimitive(t, r) { if ("object" != TabButtonWrapper_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != TabButtonWrapper_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function TabButtonWrapper_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = TabButtonWrapper_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function TabButtonWrapper_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+function TabButtonWrapper(_ref) {
+  var children = _ref.children,
+    isSelected = _ref.isSelected,
+    props = TabButtonWrapper_objectWithoutProperties(_ref, TabButtonWrapper_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("li", {
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)(Button, TabButtonWrapper_objectSpread(TabButtonWrapper_objectSpread({
+      className: isSelected ? 'active' : undefined
+    }, props), {}, {
+      children: children
+    }))
+  });
+}
+;// CONCATENATED MODULE: ./src/components/Presentation/Wrappers/ExamplesWrapper.jsx
+
+
+
+function ExamplesWrapper(_ref) {
+  var children = _ref.children,
+    buttons = _ref.buttons,
+    _ref$ButtonsContainer = _ref.ButtonsContainer,
+    ButtonsContainer = _ref$ButtonsContainer === void 0 ? 'menu' : _ref$ButtonsContainer;
+  // const ButtonsContainer = buttonsContainer
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)(ButtonsContainer, {
+      children: buttons
+    }), children]
+  });
+}
+;// CONCATENATED MODULE: ./src/assets/images/components.png
 const components_namespaceObject = __webpack_require__.p + "a0855d4baa23195340a7.png";
-;// CONCATENATED MODULE: ./src/images/config.png
+;// CONCATENATED MODULE: ./src/assets/images/config.png
 const config_namespaceObject = __webpack_require__.p + "afd8e8f0d2acd6b65ae8.png";
-;// CONCATENATED MODULE: ./src/images/jsx-ui.png
+;// CONCATENATED MODULE: ./src/assets/images/jsx-ui.png
 const jsx_ui_namespaceObject = __webpack_require__.p + "9326b60f84ddfaad2e3b.png";
-;// CONCATENATED MODULE: ./src/images/state-mgmt.png
+;// CONCATENATED MODULE: ./src/assets/images/state-mgmt.png
 const state_mgmt_namespaceObject = __webpack_require__.p + "f3f4320f530711c79616.png";
-;// CONCATENATED MODULE: ./src/scripts/data.js
+;// CONCATENATED MODULE: ./src/components/data/data.js
 
 
 
@@ -615,69 +760,17 @@ var EXAMPLES = {
     code: " \n    function Counter() {\n          const [isVisible, setIsVisible] = useState(false);\n\n          function handleClick() {\n            setIsVisible(true);\n          }\n                \n          return (\n              <div>\n                <button onClick={handleClick}>Show Details</button>\n                {isVisible && <p>Amazing details!</p>}\n              </div>\n          );\n    }"
   }
 };
-;// CONCATENATED MODULE: ./src/scripts/components/SectionWrapper.js
-var SectionWrapper_excluded = ["children", "title"];
-function SectionWrapper_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = SectionWrapper_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function SectionWrapper_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var Section = function Section(_ref) {
-  var children = _ref.children,
-    title = _ref.title,
-    props = SectionWrapper_objectWithoutProperties(_ref, SectionWrapper_excluded);
-  return /*#__PURE__*/react.createElement("section", props, /*#__PURE__*/react.createElement("h2", null, title), children);
-};
-/* harmony default export */ const SectionWrapper = (Section);
-;// CONCATENATED MODULE: ./src/scripts/components/CoreConcepts.js
-
-var CoreConcepts = function CoreConcepts(_ref) {
-  var title = _ref.title,
-    description = _ref.description,
-    image = _ref.image;
-  return /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement("img", {
-    src: image,
-    alt: title
-  }), /*#__PURE__*/react.createElement("h3", null, title), /*#__PURE__*/react.createElement("p", null, description));
-};
-/* harmony default export */ const components_CoreConcepts = (CoreConcepts);
-;// CONCATENATED MODULE: ./src/scripts/components/CoreConcept.js
-function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-
-
-
-var CoreConcept = function CoreConcept() {
-  return /*#__PURE__*/react.createElement(SectionWrapper, {
-    id: "core-concepts",
-    title: "Core Concepts"
-  }, /*#__PURE__*/react.createElement("ul", null, CORE_CONCEPTS.map(function (item) {
-    return /*#__PURE__*/react.createElement(components_CoreConcepts, _extends({
-      key: item.title
-    }, item));
-  })));
-};
-/* harmony default export */ const components_CoreConcept = (CoreConcept);
-;// CONCATENATED MODULE: ./src/scripts/components/TabButton.js
-var TabButton_excluded = ["children", "isSelected"];
-function TabButton_extends() { TabButton_extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return TabButton_extends.apply(this, arguments); }
-function TabButton_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = TabButton_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function TabButton_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var TabButton = function TabButton(_ref) {
-  var children = _ref.children,
-    isSelected = _ref.isSelected,
-    props = TabButton_objectWithoutProperties(_ref, TabButton_excluded);
-  return /*#__PURE__*/react.createElement("li", null, /*#__PURE__*/react.createElement("button", TabButton_extends({
-    className: isSelected ? 'active' : undefined
-  }, props), children));
-};
-/* harmony default export */ const components_TabButton = (TabButton);
-;// CONCATENATED MODULE: ./src/scripts/components/Examples.js
+;// CONCATENATED MODULE: ./src/components/Containers/Examples.jsx
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
 
 
 
@@ -692,49 +785,142 @@ var Examples = function Examples() {
   };
   var tabContent = '';
   if (selectedState) {
-    tabContent = /*#__PURE__*/react.createElement("div", {
-      id: "tab-content"
-    }, /*#__PURE__*/react.createElement("h3", null, EXAMPLES[selectedState].title), /*#__PURE__*/react.createElement("p", null, EXAMPLES[selectedState].description), /*#__PURE__*/react.createElement("pre", null, /*#__PURE__*/react.createElement("code", null, EXAMPLES[selectedState].code)));
+    tabContent = /*#__PURE__*/(0,jsx_runtime.jsxs)("div", {
+      id: "tab-content",
+      children: [/*#__PURE__*/(0,jsx_runtime.jsx)("h3", {
+        children: EXAMPLES[selectedState].title
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)("p", {
+        children: EXAMPLES[selectedState].description
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)("pre", {
+        children: /*#__PURE__*/(0,jsx_runtime.jsx)("code", {
+          children: EXAMPLES[selectedState].code
+        })
+      })]
+    });
   }
-  return /*#__PURE__*/react.createElement(SectionWrapper, {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(SectionWrapper, {
     id: "examples",
-    title: "Examples"
-  }, /*#__PURE__*/react.createElement("menu", null, /*#__PURE__*/react.createElement(components_TabButton, {
-    isSelected: selectedState == 'components',
-    onClick: function onClick() {
-      return handleSelect('components');
-    }
-  }, "Components"), /*#__PURE__*/react.createElement(components_TabButton, {
-    isSelected: selectedState == 'jsx',
-    onClick: function onClick() {
-      return handleSelect('jsx');
-    }
-  }, "JSX"), /*#__PURE__*/react.createElement(components_TabButton, {
-    isSelected: selectedState == 'props',
-    onClick: function onClick() {
-      return handleSelect('props');
-    }
-  }, "Props"), /*#__PURE__*/react.createElement(components_TabButton, {
-    isSelected: selectedState == 'state',
-    onClick: function onClick() {
-      return handleSelect('state');
-    }
-  }, "State")), tabContent);
+    title: "Examples",
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)(ExamplesWrapper
+    //  ButtonsContainer='menu' // other options can be ul or div
+    //  ButtonsContainer={Section}  can also be passed a Custom component
+    , {
+      buttons: /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+        children: [/*#__PURE__*/(0,jsx_runtime.jsx)(TabButtonWrapper, {
+          isSelected: selectedState == 'components',
+          onClick: function onClick() {
+            return handleSelect('components');
+          },
+          children: "Components"
+        }), /*#__PURE__*/(0,jsx_runtime.jsx)(TabButtonWrapper, {
+          isSelected: selectedState == 'jsx',
+          onClick: function onClick() {
+            return handleSelect('jsx');
+          },
+          children: "JSX"
+        }), /*#__PURE__*/(0,jsx_runtime.jsx)(TabButtonWrapper, {
+          isSelected: selectedState == 'props',
+          onClick: function onClick() {
+            return handleSelect('props');
+          },
+          children: "Props"
+        }), /*#__PURE__*/(0,jsx_runtime.jsx)(TabButtonWrapper, {
+          isSelected: selectedState == 'state',
+          onClick: function onClick() {
+            return handleSelect('state');
+          },
+          children: "State"
+        })]
+      }),
+      children: tabContent
+    })
+  });
 };
-/* harmony default export */ const components_Examples = (Examples);
-;// CONCATENATED MODULE: ./src/scripts/App.js
+/* harmony default export */ const Containers_Examples = (Examples);
+;// CONCATENATED MODULE: ./src/components/Presentation/Wrappers/UListWrapper.jsx
+function UListWrapper_typeof(o) { "@babel/helpers - typeof"; return UListWrapper_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, UListWrapper_typeof(o); }
+var UListWrapper_excluded = ["children"];
+function UListWrapper_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function UListWrapper_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? UListWrapper_ownKeys(Object(t), !0).forEach(function (r) { UListWrapper_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : UListWrapper_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function UListWrapper_defineProperty(obj, key, value) { key = UListWrapper_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function UListWrapper_toPropertyKey(t) { var i = UListWrapper_toPrimitive(t, "string"); return "symbol" == UListWrapper_typeof(i) ? i : String(i); }
+function UListWrapper_toPrimitive(t, r) { if ("object" != UListWrapper_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != UListWrapper_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+function UListWrapper_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = UListWrapper_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function UListWrapper_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function UListWrapper(_ref) {
+  var children = _ref.children,
+    props = UListWrapper_objectWithoutProperties(_ref, UListWrapper_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("ul", UListWrapper_objectSpread(UListWrapper_objectSpread({}, props), {}, {
+    children: children
+  }));
+}
+;// CONCATENATED MODULE: ./src/components/Presentation/CoreConcept/CoreConcepts.jsx
+
+
+function CoreConcepts(_ref) {
+  var title = _ref.title,
+    description = _ref.description,
+    image = _ref.image;
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)("li", {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("img", {
+      src: image,
+      alt: title
+    }), /*#__PURE__*/(0,jsx_runtime.jsx)("h3", {
+      children: title
+    }), /*#__PURE__*/(0,jsx_runtime.jsx)("p", {
+      children: description
+    })]
+  });
+}
+;// CONCATENATED MODULE: ./src/components/Presentation/CoreConcept/CoreConcept.jsx
+function CoreConcept_typeof(o) { "@babel/helpers - typeof"; return CoreConcept_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, CoreConcept_typeof(o); }
+function CoreConcept_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function CoreConcept_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? CoreConcept_ownKeys(Object(t), !0).forEach(function (r) { CoreConcept_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : CoreConcept_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function CoreConcept_defineProperty(obj, key, value) { key = CoreConcept_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function CoreConcept_toPropertyKey(t) { var i = CoreConcept_toPrimitive(t, "string"); return "symbol" == CoreConcept_typeof(i) ? i : String(i); }
+function CoreConcept_toPrimitive(t, r) { if ("object" != CoreConcept_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != CoreConcept_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+
+
+
+
+function CoreConcept() {
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment, {
+    children: /*#__PURE__*/(0,jsx_runtime.jsx)(SectionWrapper, {
+      id: "core-concepts",
+      title: "Core Concepts",
+      children: /*#__PURE__*/(0,jsx_runtime.jsx)(UListWrapper, {
+        children: CORE_CONCEPTS.map(function (item) {
+          return /*#__PURE__*/(0,jsx_runtime.jsx)(CoreConcepts, CoreConcept_objectSpread({}, item), item.title);
+        })
+      })
+    })
+  });
+}
+;// CONCATENATED MODULE: ./src/components/App.jsx
+
+
+
 
 
 
 
 
 var App = function App() {
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(components_Header, null), /*#__PURE__*/react.createElement(MainWrapper, {
-    className: "main"
-  }, /*#__PURE__*/react.createElement(components_CoreConcept, null), /*#__PURE__*/react.createElement(components_Examples, null)));
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)(HeaderWrapper, {
+      children: /*#__PURE__*/(0,jsx_runtime.jsx)(Layout_Header, {})
+    }), /*#__PURE__*/(0,jsx_runtime.jsxs)(MainWrapper, {
+      className: "main",
+      children: [/*#__PURE__*/(0,jsx_runtime.jsx)(CoreConcept, {}), /*#__PURE__*/(0,jsx_runtime.jsx)(Containers_Examples, {})]
+    })]
+  });
 };
-/* harmony default export */ const scripts_App = (App);
+/* harmony default export */ const components_App = (App);
 ;// CONCATENATED MODULE: ./src/index.js
+
 
 
 
@@ -744,7 +930,9 @@ if (true) {
 } else {}
 var domNode = document.querySelector("#root");
 var root = (0,client/* createRoot */.s)(domNode);
-root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(scripts_App, null)));
+root.render( /*#__PURE__*/(0,jsx_runtime.jsx)(react.StrictMode, {
+  children: /*#__PURE__*/(0,jsx_runtime.jsx)(components_App, {})
+}));
 
 // Warning: You are calling ReactDOMClient.createRoot() on a container that has already been passed to createRoot() before. 
 // Instead, call root.render() on the existing root instead if you want to update it.
