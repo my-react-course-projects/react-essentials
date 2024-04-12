@@ -20,7 +20,7 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 class RunAfterCompile{
     apply(compiler) {
         compiler.hooks.done.tap('Copy images', () => {
-            fse.copySync(`./${sourceDir}/images`, `./${buildDir}/images`)
+            fse.copySync(`./${sourceDir}/assets/images`, `./${buildDir}/assets/images`)
         })
     }
 }
